@@ -109,16 +109,22 @@ How to do that is very simple.
 In **Development** mode the mail server is configurated by default on googlemail.
 First you need an account on gmail. After that, you need to tell the application
 your googlemail account:
+
 `(venv) $ export MAIL_USERNAME=your googlemail`
+
 `(venv) $ export MAIL_PASSWORD=your password`
+
 **IMPORTANT NOTE:** on some Shell if you input your email password ending with some
 symbol (for example double Exclamation point), the command shell will mess up.
 But don't worry, you'll notice it, and change password.
 
 
 In **Production** mode you can set the email server, the port and TLS.
+
 `$ export MAIL_SERVER=mail server`
+
 `$ export MAIL_PORT=port number`
+
 `$ export MAIL_USE_TLS=True or False`
 
 #### Something more to know
