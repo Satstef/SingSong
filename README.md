@@ -99,7 +99,7 @@ the DB file:
 
   `(venv) $ flask init-db`
   
-  If everything was ok you should see **Database creato con successo**
+  If everything was ok you should see **Database creato con successo** and Database.db file in **DBschema** directory
 
 - Email settings.
 When the user register his/her account an email with a confirmation link will be send.
