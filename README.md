@@ -24,7 +24,6 @@ He/She is now ready to listen the song uploaded.
 To set the application on your machine is not complicated at all. It just requires
 a little bit of your patience and time.
 The application has been programmed with Python version 3.8 and flask framework.
-To understand better how is the application structure, see below (end of the file).
 
 After pulling the app on your machine you need a virtual enviroment:
 - From shell go in **app_SingSong** directory and create your own virtual enviroment.
@@ -116,62 +115,3 @@ folder (named with user name) will be created in the application in the path:
 SingSong/static/upload_song. Here all his/her mp3 files will be stored. The path
 to the folder is stored in DB **Dati_utente** table.
 
-
-#STRUCTURE OF APPLICATION FOLDERS
-
-APP_SINGSONG/
-	|
-	|___ Config.py
-  |
-  |___ VENV/
-	|
-	|___ SINGSONG/
-		|___ __init__.py
-		|
-		|___ email.py
-		|
-		|___ STATIC/
-		|	|___ in_fo.css
-		|	|
-		|	|___ JS/
-		|	|
-		|	|___ UPLOAD_SONG/
-		|
-		|___ TEMPLATES/
-    |
-    |___ DBschema/
-		| |___ Schema.sql
-    | |
-    | |___ Database.db
-    |
-		|___ DATABASE/
-		|	|___ __init__.py
-		|	|
-		|	|___ Database_init.py
-		|
-		|___ MAIN/
-		|	|___ __init__.py
-		|	|
-		|	|___ views.py
-		|
-		|___ AUTH/
-		|	|___ __init__.py
-		|	|
-		|	|___ views.py
-		|	|
-		|	|___ forms.py
-		|	|
-		|	|___ validate.py
-		|	|
-		|	|___ db_conn.py
-		|
-		|___ PROFILE/
-			|___ __init__.py
-			|
-			|___ views.py
-			|
-			|___ forms.py
-			|
-			|___ validate.py
-			|
-			|___ db_conn.py
