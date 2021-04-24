@@ -7,7 +7,8 @@ The programming part is about:
 - sending email with confirmation token;
 - creating user profile page, upload files and create interactions between user and
 the machine (user can insert data, update them, listen to music);
-- creating users personal folder to store uploaded files
+- store all datas in sqlite3 Database;
+- creating users personal folder to store uploaded files;
 If you may find this code helpful for your works, I will be glad to give more information about.
 
 
@@ -21,9 +22,10 @@ He/She is now ready to listen the song uploaded.
 
 
 ## After downloading the application
-To set the application on your machine is not complicated at all. It just requires
+To set configuration of the application on your machine is not complicated at all. It just requires
 a little bit of your patience and time.
-The application has been programmed with Python version 3.8 and flask framework.
+The application has been programmed with Python version 3.8 and flask framework. 
+The Database used is sqlite3; this library is already included in Python. If you want a Database GUI you need to download it here https://sqlitebrowser.org/dl/
 
 After download you need a virtual enviroment where install dependencies:
 - From shell go in **app_SingSong** directory and create your own virtual enviroment.
