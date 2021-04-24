@@ -13,7 +13,7 @@ If you may find this code helpful for your works, I will be glad to give more in
 
 
 ## How the app works on internet
-The user has to register an account by giving his/her name, email and choosing
+App works in a very basic way. The user has to register an account by giving his/her name, email and choosing
 one password. An email with a link will be send to him/her. After confirmating the
 account by clicking on the link, the user can login in his/her profile.
 User can upload mp3 files (only mp3 files are allowed) and describe the song with
