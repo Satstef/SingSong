@@ -64,7 +64,7 @@ Please follow these instruction in the order they are.
 According to what you want to do (improve and test or deploy the application), you
 need to set the proper configuration. By default the application is set on **Development** configuration.
 If you need to change, do it in this way:
-  1. Open in your IDE the file: **app_SingSong/SingSong/__init__.py** (the factory function).
+  1. Open in your IDE the file: `app_SingSong/SingSong/__init__.py` (the factory function).
   2. Change the **config_class**
   ```python
   def create_app(config_class=Development):
@@ -90,7 +90,7 @@ the DB file:
   
   `(venv) $ export DATABASE_URL=abspath to the folder`
   
-  3. tell the application where is the schema.sql file. We suppose is in the same folder
+  3. tell the application where is the schema.sql file. We suppose is in the same folder. 
   of DB file:
   
   `(venv) $ export DB_SCHEMA_URL=abspath to the folder`
