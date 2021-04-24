@@ -29,17 +29,26 @@ After download you need a virtual enviroment where install dependencies:
 - From shell go in **app_SingSong** directory and create your own virtual enviroment.
 - Activate the virtualenv. I Will use **venv** name as example for the virtualenv.
 - Install all required packages (see requirements file) using pip (or pip3).
+
 `(venv) $ pip3 install -r requirements.txt`
+
 - From shell, staying in **app_SingSong** directory, launch command:
+
 `(venv) $ export FLASK_APP=SingSong`
+
 `(venv) $ export FLASK_ENV=development`
+
 This last one runs the application on local server in Development mode.
 This mode is useful if you want to modify the app code. In fact the debug system
 becomes active and tells you where exactly is the code error (in case is there some).
+
 `(venv) $ flask run`
+
 Will run your local server on port 5000.
 To see the application running open any browser and type
+
 `localhost:5000` or `127.0.0.1:5000`
+
 This is the home page of the application.
 
 
