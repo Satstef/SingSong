@@ -79,7 +79,7 @@ If you need to change, do it in this way:
   def create_app(config_class=Production):
       app = Flask('SingSong')
   ```
-- Set the **SECRET_KEY** variable. If in Development configuration, you may utilize the given SECRET_KEY to test the application. In Production you need to change the key and give another one. From shell:
+- Set the **SECRET_KEY** variable. If you are in development enviroment, you may utilize the given SECRET_KEY to test the application. In Production you need to change the key and give another one. From shell:
 `(venv) $ export SECRET_KEY=b'secretkey'`
 
 - Initialize Database **sqlite3** from shell.
