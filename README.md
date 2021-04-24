@@ -20,7 +20,7 @@ title, album, artist and genre.
 He/She is now ready to listen the song uploaded.
 
 
-## After pulling the application
+## After downloading the application
 To set the application on your machine is not complicated at all. It just requires
 a little bit of your patience and time.
 The application has been programmed with Python version 3.8 and flask framework.
