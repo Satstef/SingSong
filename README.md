@@ -12,7 +12,7 @@ Some Backend programming work(Python):
 - store datas in sqlite3 Database;
 - creating users personal folder to store uploaded files;
 
-Some Frontend programming work: 
+Some Frontend programming work (Javascript, HTML): 
 - creating forms; 
 - creating user profile pages;
 - Making user interact with the app (insert song information, update them, listen to music);
