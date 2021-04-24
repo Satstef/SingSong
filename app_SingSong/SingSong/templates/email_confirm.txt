@@ -1,9 +1,0 @@
-Dear {{ nome }},
-Welcome to SingSong!
-
-To confirm your account please click on the following link:
-{{ url_for('auth.confirm', token=token, _external=True) }}
-
-Sincerely,
-The SingSong Team
-Note: Please do not reply to this email address.
