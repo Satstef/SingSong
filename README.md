@@ -101,7 +101,7 @@ the DB file:
   But don't worry, you'll notice it, and change password.
 
 ### Launch your localhost server and run the app
-After all configuration you can start local server:
+Now you can start local server:
 
 `(venv) $ flask run`
 
