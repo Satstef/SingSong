@@ -7,7 +7,7 @@
 ## 1. General description
 This is a **web running** application used to store your favourites songs and listen to them.  
 The programming part is about:
-- registering an account and login safely;
+- register an account and login safely;
 - sending email with confirmation token;
 - creating user profile page, upload files and create interactions between user and
 the machine (user can insert data, update them, listen to music);
