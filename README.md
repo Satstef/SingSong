@@ -81,7 +81,9 @@ the DB file:
   1. move the **DBschema** directory anywhere on your System.
   2. tell the application where is the folder to create the DB file.
   From shell just insert the abspath without the **DBschema** directory part:
+  
   `(venv) $ export DATABASE_URL=abspath to the folder`
+  
   3. tell the application where is the schema.sql file. We suppose is in the same folder
   of DB file:
   
