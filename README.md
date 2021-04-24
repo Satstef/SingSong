@@ -86,7 +86,9 @@ the DB file:
   of DB file:
   
   `(venv) $ export DB_SCHEMA_URL=abspath to the folder`
+  
   4. create DB file:
+
   `(venv) $ init-db`
 
 - Email settings.
