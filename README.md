@@ -80,7 +80,7 @@ the DB file:
   You need to setup the email sender configuration (see config.py file).
   How to do that is very simple.
 
-  In **Development** configuration (just follow this configuration and leave the **Production** one; to better understand how to change cnfiguration go to 3.4 paragraph) the mail server is configurated by default on googlemail.
+  In **Development** configuration (just follow this configuration and leave the **Production** one; to better understand how to change cnfiguration go to 3.4 paragraph) the mail server is set by default on googlemail.
   All you need is gmail account. After that, you need to tell the application
   your googlemail account:
 
