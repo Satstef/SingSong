@@ -25,7 +25,7 @@ To set the application on your machine is not complicated at all. It just requir
 a little bit of your patience and time.
 The application has been programmed with Python version 3.8 and flask framework.
 
-After pulling the app on your machine you need a virtual enviroment:
+After downoload you need a virtual enviroment where install dependencies:
 - From shell go in **app_SingSong** directory and create your own virtual enviroment.
 - Activate the virtualenv. I Will use **venv** name as example for the virtualenv.
 - Install all required packages (see requirements file) using pip (or pip3).
