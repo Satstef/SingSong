@@ -6,13 +6,16 @@
 
 ## 1. General description
 This is a **web running** application used to store your favourites songs and listen to them.  
-The programming part is about:
+Some Backend programming work(Python):
 - register an account and login safely;
 - sending email with confirmation token;
-- creating user profile page, upload files and create interactions between user and
-the machine (user can insert data, update them, listen to music);
-- store all datas in sqlite3 Database;
+- store datas in sqlite3 Database;
 - creating users personal folder to store uploaded files;
+
+Some Frontend programming work: 
+- creating forms; 
+- creating user profile pages;
+- Making user interact with the app (insert song information, update them, listen to music);
 If you may find this code helpful for your works, I will be glad to give more information about.
 
 
@@ -20,8 +23,7 @@ If you may find this code helpful for your works, I will be glad to give more in
 App works in a very basic way. The user has to register an account by giving his/her name, email and choosing
 one password. An email with a link will be send to him/her. After confirmating the
 account by clicking on the link, the user can login in his/her profile.
-User can upload mp3 files (only mp3 files are allowed) and describe the song with
-title, album, artist and genre.
+User can upload mp3 files (only mp3 files are allowed) and enter song informations (title, album, artist and genre).
 He/She is now ready to listen the song uploaded.
 
 
