@@ -88,16 +88,18 @@ the DB file:
   2. tell the application where is the folder to create the DB file.
   From shell set the DATABASE enviroment variable with the abspath to **DBschema** directory:
   
-  `(venv) $ export DATABASE_URL=abspath to the folder/Dbschema`
+  `(venv) $ export DATABASE_URL=abspath to the folder/DBschema`
   
   3. tell the application where is the schema.sql file. We suppose is in the same folder. 
   of DB file:
   
-  `(venv) $ export DB_SCHEMA_URL=abspath to the folder/Dbschema`
+  `(venv) $ export DB_SCHEMA_URL=abspath to the folder/DBschema`
   
   4. create DB file:
 
   `(venv) $ flask init-db`
+  
+  If everything was ok you should see **Database creato con successo**
 
 - Email settings.
 When the user register his/her account an email with a confirmation link will be send.
