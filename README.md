@@ -29,7 +29,7 @@ a little bit of your patience and time.
 The application has been programmed with Python version 3.8 and flask framework.
 The Database used is sqlite3; this library is already included in Python. If you want a Database GUI you need to download it here https://sqlitebrowser.org/dl/
 
-After download you need a virtual enviroment where install dependencies:
+After download you need a virtual enviroment where to install dependencies:
 - From shell go in **app_SingSong** directory and create your own virtual enviroment.
 - Activate the virtualenv. I Will use **venv** name as example for the virtualenv.
 - Install all required packages (see requirements file) using pip (or pip3).
