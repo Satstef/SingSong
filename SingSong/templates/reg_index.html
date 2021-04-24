@@ -1,0 +1,41 @@
+{% extends "template.html" %}
+{% block registra %}
+  <div class="registra">
+    <h2 class="tit"> REGISTER TO LOGIN </h2>
+    <form name="reg" id="reg" action="{{ url_for('auth.registra')}}" method="post" novalidate>
+          {{ form.csrf_token }}
+      <p>
+          {{ form.nome.label }}<br>
+          {{ form.nome() }}
+          <a class="errors" style="color: red">{% for error in form.nome.errors %}
+            &nbsp;&nbsp;{{ error }}{% endfor %}</a>
+      </p>
+      <p>
+          {{ form.email.label }}<br>
+          {{ form.email(class="passw_space") }}
+          <a class="errors" style="color: red">{% for error in form.email.errors %}
+            &nbsp;&nbsp;{{ error }}{% endfor %}</a>
+      </p>
+      <p>
+          {{ form.password.label }}<br>
+          {{ form.password(class="passw_space") }}
+          <a class="errors" style="color: red">{% for error in form.password.errors %}
+            &nbsp;&nbsp;{{ error }}{% endfor %}</a>
+      </p>
+      <p>
+          {{ form.confirm_pass.label }}<br>
+          {{ form.confirm_pass(class="passw_space") }}
+          <a class="errors" style="color: red">{% for error in form.confirm_pass.errors %}
+            &nbsp;&nbsp;{{ error }}{% endfor %}</a>
+      </p>
+      <p style="color: green">{{mi}}</p>
+      <p style="color: green">{{ml}}</p>
+      <p>{{ form.submit(class="submit") }}</p>
+    </form>
+  </div>
+  <div class="vai_login">
+    <h4 class="foot">You can <button type="button"
+      onclick="location.href='{{ url_for('auth.login')}}'"
+      style="cursor:pointer">login</button> with username and password</h4>
+  </div>
+{% endblock %}

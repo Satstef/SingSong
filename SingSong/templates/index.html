@@ -1,0 +1,73 @@
+{% extends "template.html" %}
+{% block index %}
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src='/static/music.png' alt='music' style="width:20%">
+  <div class="text">Listen to your music</div>
+</div>
+
+<div class="mySlides fade">
+  <img src='/static/note.png' alt='guitar' style="width:20%">
+  <div class="text">Everywhere</div>
+</div>
+
+<div class="mySlides fade">
+  <img src='/static/earphone.png' alt='earphone'>
+  <div class="text">From pc or mobile</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<div class="msg_flash">
+{% with invalids = get_flashed_messages(category_filter=["invalid"]) %}
+  {% if invalids %}
+    {% for msg in invalids %}
+      <p style="color: red">{{msg}}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+{% with confirms = get_flashed_messages(category_filter=["confirm"]) %}
+  {% if confirms %}
+    {% for msg in confirms %}
+      <p style="color: green">{{msg}}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+</div>
+<div class="access">
+  <h4 class="foot">You can <button type="button"
+    onclick="location.href='{{ url_for('auth.login')}}'"
+    style="cursor:pointer">login</button> or <button type="button"
+    onclick="location.href='{{ url_for('auth.registra')}}'" style="cursor:pointer">
+    register</button> if you don't have your username and password</h4>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+{% endblock %}
