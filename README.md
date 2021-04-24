@@ -1,6 +1,6 @@
 # SingSong app
 
-## General description
+## 1. General description
 This is a **web running** application used to store your favourites songs and listen to them.  
 The programming part is about:
 - registering an account and login safely;
@@ -12,7 +12,7 @@ the machine (user can insert data, update them, listen to music);
 If you may find this code helpful for your works, I will be glad to give more information about.
 
 
-## How the app works on internet
+## 2. How the app works on internet
 App works in a very basic way. The user has to register an account by giving his/her name, email and choosing
 one password. An email with a link will be send to him/her. After confirmating the
 account by clicking on the link, the user can login in his/her profile.
@@ -21,9 +21,9 @@ title, album, artist and genre.
 He/She is now ready to listen the song uploaded.
 
 
-## Download and configuration
+## 3. Download and configuration
 
-### virtualenv and App name
+### 3.1 virtualenv and App name
 To set configuration of the application on your machine is not complicated at all. It just requires
 a little bit of your patience and time.
 The application has been programmed with Python version 3.8 and flask framework.
@@ -47,7 +47,7 @@ This enviroment is useful if you want to modify the app code. In fact the debug 
 becomes active and tells you where exactly is the code error (in case is there some).
 
 
-### Secret key, Database and Email
+### 3.2 Secret key, Database and Email
 Please follow these instruction in the order they are.
 
 - Set the **SECRET_KEY** variable. If you are in development enviroment, you may utilize the given SECRET_KEY to test the application. In Production you need to change the key and give another one. From shell:
@@ -100,7 +100,7 @@ the DB file:
   symbol (for example double Exclamation point), the command shell will mess up.
   But don't worry, you'll notice it, and change password.
 
-### Launch your localhost server and run the app
+### 3.3 Launch your localhost server and run the app
 Now you can start local server:
 
 `(venv) $ flask run`
@@ -113,7 +113,7 @@ To see the application running open any browser and type
 This is the home page of the application.
 
 
-### Development and Production configuration
+### 3.4 Development and Production configuration
 The application has 2 configuration types (see **config.py** file):
 - **Development** if you are running the application on your localhost server in development enviroment, means you are bringing changes to the code and testing it. In this case the Development configuration is adviced.
 - **Production** configuration is the one, if you want to deploy the app on server with a domain name.
@@ -135,7 +135,7 @@ If you need to change, do it in this way:
   ```
 
 
-## Something more to know
+## 4. Something more to know
 - The Database has relational structure among all tables (One to many relations).
 - When a user register and click on confirmation link in his/her email, a personal
 folder (named with user name) will be created in the application in the path:
