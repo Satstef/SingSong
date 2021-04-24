@@ -38,8 +38,8 @@ After download you need a virtual enviroment where install dependencies:
 
 `(venv) $ export FLASK_ENV=development`
 
-This last one runs the application on local server in Development mode.
-This mode is useful if you want to modify the app code. In fact the debug system
+This last one runs the application on local server in Development enviroment.
+This development enviroment is useful if you want to modify the app code. In fact the debug system
 becomes active and tells you where exactly is the code error (in case is there some).
 
 `(venv) $ flask run`
