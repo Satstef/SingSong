@@ -81,7 +81,7 @@ the DB file:
   How to do that is very simple.
 
   In **Development** configuration the mail server is configurated by default on googlemail.
-  First you need an account on gmail. After that, you need to tell the application
+  All you need is gmail account. After that, you need to tell the application
   your googlemail account:
 
   `(venv) $ export MAIL_USERNAME=your googlemail`
