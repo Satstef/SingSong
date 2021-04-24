@@ -13,8 +13,8 @@ class Config(object):
 
 class Development(Config):
     EXPLAIN_TEMPLATE_LOADING=False
-    DATABASE = os.path.join(os.environ.get('DATABASE_URL'), 'DBschema/Database.db')
-    DB_SCHEMA = os.path.join(os.environ.get('DB_SCHEMA_URL'), 'DBschema/schema.sql')
+    DATABASE = os.path.join(os.environ.get('DATABASE_URL'), 'Database.db')
+    DB_SCHEMA = os.path.join(os.environ.get('DB_SCHEMA_URL'), 'schema.sql')
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
@@ -30,8 +30,8 @@ class Testing(Config):
 class Production(Config):
     # Configurare i valori con le variabili d'ambiente. Da terminale lanciare:
     # export MAIL_SERVER = serveremail, ecc.
-    DATABASE = os.path.join(os.environ.get('DATABASE_URL'), 'DBschema/Database.db')
-    DB_SCHEMA = os.path.join(os.environ.get('DB_SCHEMA_URL'), 'DBschema/schema.sql')
+    DATABASE = os.path.join(os.environ.get('DATABASE_URL'), 'Database.db')
+    DB_SCHEMA = os.path.join(os.environ.get('DB_SCHEMA_URL'), 'schema.sql')
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
     MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
