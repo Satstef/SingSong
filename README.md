@@ -91,7 +91,7 @@ the DB file:
   
   4. create DB file:
 
-  `(venv) $ init-db`
+  `(venv) $ flask init-db`
 
 - Email settings.
 When the user register his/her account an email with a confirmation link will be send.
