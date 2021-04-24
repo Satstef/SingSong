@@ -90,9 +90,9 @@ the DB file:
 
   In **Production** configuration (don't do this now; this is only when you deploy the app) you can set the email server, the port and TLS.
 
-  `$ export MAIL_SERVER=mail server`
+  `$ export MAIL_SERVER=your mail server`
 
-  `$ export MAIL_PORT=port number`
+  `$ export MAIL_PORT=your port number`
 
   `$ export MAIL_USE_TLS=True or False`
   
