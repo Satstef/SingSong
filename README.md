@@ -1,5 +1,9 @@
 # SingSong app
 
+![alt text](https://github.com/Satstef/SingSong/blob/14678c487eea336f52df05662b487f0dd0ddddd3/app_SingSong/SingSong/static/Home.png?raw=true)
+
+![alt text](https://github.com/Satstef/SingSong/blob/16cd10808399f55a33f8d40e79788c8b96e0b9f0/app_SingSong/SingSong/static/user-profile.png?raw=true)
+
 ## 1. General description
 This is a **web running** application used to store your favourites songs and listen to them.  
 The programming part is about:
