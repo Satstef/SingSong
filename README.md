@@ -84,6 +84,7 @@ the DB file:
   `(venv) $ export DATABASE_URL=abspath to the folder`
   3. tell the application where is the schema.sql file. We suppose is in the same folder
   of DB file:
+  
   `(venv) $ export DB_SCHEMA_URL=abspath to the folder`
   4. create DB file:
   `(venv) $ init-db`
