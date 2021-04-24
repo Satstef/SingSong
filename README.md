@@ -76,29 +76,29 @@ the DB file:
   If everything was ok you should see **Database creato con successo** and Database.db file in **DBschema** directory
 
 - Email settings.
-When the user register his/her account an email with a confirmation link will be send.
-You need to setup the email sender configuration (see config.py file).
-How to do that is very simple.
-In **Development** configuration the mail server is configurated by default on googlemail.
-First you need an account on gmail. After that, you need to tell the application
-your googlemail account:
+  When the user register his/her account an email with a confirmation link will be send.
+  You need to setup the email sender configuration (see config.py file).
+  How to do that is very simple.
 
-`(venv) $ export MAIL_USERNAME=your googlemail`
+  In **Development** configuration the mail server is configurated by default on googlemail.
+  First you need an account on gmail. After that, you need to tell the application
+  your googlemail account:
 
-`(venv) $ export MAIL_PASSWORD=your password`
+  `(venv) $ export MAIL_USERNAME=your googlemail`
 
-**IMPORTANT NOTE:** on some Shell if you input your email password ending with some
-symbol (for example double Exclamation point), the command shell will mess up.
-But don't worry, you'll notice it, and change password.
+  `(venv) $ export MAIL_PASSWORD=your password`
 
+  In **Production** configuration you can set the email server, the port and TLS.
 
-In **Production** configuration you can set the email server, the port and TLS.
+  `$ export MAIL_SERVER=mail server`
 
-`$ export MAIL_SERVER=mail server`
+  `$ export MAIL_PORT=port number`
 
-`$ export MAIL_PORT=port number`
-
-`$ export MAIL_USE_TLS=True or False`
+  `$ export MAIL_USE_TLS=True or False`
+  
+  **IMPORTANT NOTE:** on some Shell if you input your email password ending with some
+  symbol (for example double Exclamation point), the command shell will mess up.
+  But don't worry, you'll notice it, and change password.
 
 ### Launch your localhost server and run the app
 After all configuration you can start local server:
