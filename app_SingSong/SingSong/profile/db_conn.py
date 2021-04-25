@@ -145,7 +145,8 @@ def insert_gen(genere, cur):
     cur.execute("INSERT INTO Genere (genere) VALUES (?)", [genere])
     return id_value(id_query, genere, cur)
 
-""" Inserimento della traccia nel DB con i corrispondenti id di album e genere."""
+""" Inserimento della traccia nel DB con i corrispondenti id di album e genere.
+Iserisce anche l'album, il genere e l'artista. Viene esportata nelle views"""
 def insert_trac(artista, album, genere, traccia, filepath):
     conn = get_db()
     cur = conn.cursor()
@@ -161,14 +162,6 @@ def insert_trac(artista, album, genere, traccia, filepath):
     cur.execute("INSERT INTO Traccia (Album_id, Genere_id, User_id, canzone, Filepath) VALUES (?,?,?,?,?)",
         values)
     conn.commit()
-    close_db(e=None)
-    return
-
-""" La funzione da esportare in views che richiama le precedenti 4 funzioni per
-l'inserimento dei dati nel DB """
-def main_insert(artista, album, genere, traccia, filepath):
-    insert_art(artista)
-    insert_trac(traccia, album, genere, artista, filepath)
     close_db(e=None)
     return
 
