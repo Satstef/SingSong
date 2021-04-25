@@ -27,7 +27,7 @@ User can upload mp3 files (only mp3 files are allowed) and enter song informatio
 He/She is now ready to listen the song uploaded.
 
 
-## 3. Download and configuration
+## 3. Download and configuration (for developers)
 
 ### 3.1 virtualenv and App name
 To set configuration of the application on your machine is not complicated at all. It just requires
