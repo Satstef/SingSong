@@ -5,7 +5,7 @@
 ![alt text](https://github.com/Satstef/SingSong/blob/16cd10808399f55a33f8d40e79788c8b96e0b9f0/app_SingSong/SingSong/static/user-profile.png?raw=true)
 
 ## 1. General description
-This is a **web running** application used to store your favourites songs and listen to them.  
+This is a **web** application used to store your favourites songs and listen to them.  
 Some Backend programming work(Python):
 - register an account and login safely;
 - sending email with confirmation token;
