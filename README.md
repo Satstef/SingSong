@@ -30,7 +30,7 @@ He/She is now ready to listen the song uploaded.
 ## 3. Download and configuration (for developers)
 
 ### 3.1 virtualenv and App name
-To set configuration of the application on your machine is not complicated at all. It just requires
+To configure and run the application is not complicated at all. It just requires
 a little bit of your patience and time.
 The application has been programmed with Python version 3.8 and flask framework.
 The Database used is sqlite3; this library is already included in Python. If you want a Database GUI you need to download it here https://sqlitebrowser.org/dl/
