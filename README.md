@@ -112,7 +112,7 @@ Now you can start local server:
 
 `(venv) $ flask run`
 
-Will run your local server on port 5000.
+This command will run flask server on your localhost, port 5000.
 To see the application running open any browser and type
 
 `localhost:5000` or `127.0.0.1:5000`
