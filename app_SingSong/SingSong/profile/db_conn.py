@@ -154,7 +154,9 @@ def insert_trac(artista, album, genere, traccia, filepath):
     # Richiamo l'id utente loggato da associare a tutte le tracce che inserisce nel DB
     id_query= "SELECT Utente_id FROM Dati_utente WHERE Nome=?"
     utente_id = id_value(id_query, nome, cur)
-    # Creo la lista values dei valori da inserire (id album, id genere, id utente e traccia)
+    # La lista values contiene i valori da inserire nella tabelle Traccia
+    # (id album, id genere, id utente e traccia). Vengono richiamate anche le funzioni
+    # insert_alb e insert_gen per inserire album, artista e genere.
     values = insert_alb(album, artista, cur)
     values = values + insert_gen(genere, cur) + utente_id
     values.append(traccia)

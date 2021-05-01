@@ -1,8 +1,9 @@
 import os
 from flask import Flask
 from flask_login.login_manager import LoginManager
-from config import Config, Development #importo Class Config
+from config import Config, Development, Production, Testing #importo Class Config
 from flask_mail import Mail
+
 
 """Settaggio di flask_login. login_manager.login_view indica il redirect nel caso un utente
 cerchi di entrare in una pagina protetta da login_required."""
