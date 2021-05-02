@@ -70,7 +70,7 @@ the DB file:
 
   `(venv) $ export DATABASE_URL=abspath to the folder/DBschema`
 
-  3. schema.sql file, which SingSong uses to configure the DB tables, is in the same directory **DBschema**. 
+  3. `schema.sql` file, which SingSong uses to configure the DB tables, is in the same directory **DBschema**. 
 
   4. create DB file:
 
