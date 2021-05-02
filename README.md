@@ -145,6 +145,8 @@ export MAIL_PORT=your port number`
 export MAIL_USE_TLS=True or False`
 etc etc
 ```
+There are only 2 variable you must set on the terminal: `FLASK_APP` and `FLASK_DEBUG`
+
 
 ## 4. Something more to know
 - The Database has relational structure among all tables (One to many relations).
