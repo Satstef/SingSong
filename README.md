@@ -22,8 +22,7 @@ If you may find this code helpful for your works, I will be glad to give more in
 
 ## 2. How the app works on internet
 App works in a very basic way. The user has to register an account by giving his/her name, email and choosing
-one password. An email with a link will be send to him/her. After confirmating the
-account by clicking on the link, the user can login in his/her profile.
+one password. An email with a confirmation link will be send to him/her. Click the link to confirm and now the user can login in his/her profile.
 User can upload mp3 files (only mp3 files are allowed) and enter song informations (title, album, artist and genre).
 He/She is now ready to listen the song uploaded.
 
@@ -66,15 +65,12 @@ directory called **DBschema**. You can find it under **app_SingSong/SingSong** d
 In DBschema you won't find the database file yet, only schema.sql is there. To initialize
 the DB file:
   1. move the **DBschema** directory anywhere on your System.
-  2. tell the application where is the folder to create the DB file.
+  2. tell the application where is the folder. There the DB file will be created.
   From shell set the DATABASE enviroment variable with the abspath to **DBschema** directory:
 
   `(venv) $ export DATABASE_URL=abspath to the folder/DBschema`
 
-  3. tell the application where is the schema.sql file. We suppose is in the same folder.
-  of DB file:
-
-  `(venv) $ export DB_SCHEMA_URL=abspath to the folder/DBschema`
+  3. schema.sql file, which SingSong uses to configure the DB tables, is in the same directory **DBschema**. 
 
   4. create DB file:
 
@@ -140,7 +136,15 @@ If you need to change, do it in this way:
   def create_app(config_class=Production):
       app = Flask('SingSong')
   ```
-
+In config.py file there is a function from **python-dotenv** package, which is very useful to store all eviroment variable in a file. You can create a .env file where to store all the Enviroment variable which otherwise you have to set one by one. This file will be automatically read by **python-dotenv** package. You should create the .env file and keep it in the application root folder, or the folder given by os.path.dirname.
+The .env file should look like this:
+```
+export DATABASE_URL=abspath to the folder/DBschema
+export MAIL_SERVER=your mail server`
+export MAIL_PORT=your port number`
+export MAIL_USE_TLS=True or False`
+etc etc
+```
 
 ## 4. Something more to know
 - The Database has relational structure among all tables (One to many relations).
